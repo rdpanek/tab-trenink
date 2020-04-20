@@ -1,7 +1,5 @@
-![alt text](https://www.testautomation-basecamp.cz/tabMini.png "TEST AUTOMATION BASECAMP")
-
-## TEST AUTOMATION BASECAMP
-[Web](https://www.testautomation-basecamp.cz/)
+# TEST AUTOMATION BASECAMP
+[testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/)
 
 ### Návyky při používání nástrojů
 * Git bez GUI, instalace a ovládání
@@ -16,3 +14,10 @@
 * Nefunkcionální automatizace jako jsou Performance testy, Web Performance testy a všeobecný přehled nad nástroji a používáním
 * Metodiky a strategie pro vývoj a udržování automatizovných testů, pro sběr a interpretace dat z testovacího frameworku.
 * Napíšeme si a oživíme Web Performance Test
+
+
+
+
+
+
+![alt text](https://www.testautomation-basecamp.cz/tabMini.png "TEST AUTOMATION BASECAMP")
