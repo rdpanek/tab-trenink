@@ -41,4 +41,11 @@
 
 Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně soustředí na výzkum v oblasti test automatizace. Působí v první linii od psaní testů přes správu infrastruktury pro automatizované testy až po evangelizaci test automatizace. Školí testery a navštěvuje různé QA týmy, mentoruje a hodnotí jejich test stack.
 
+* [Twitter](https://twitter.com/RDPanek)
+* [LinkedIn](https://www.linkedin.com/in/rdpanek/) 
+* Tel.: 731 011 200
+* Mail: rdpanek gmail
+
+Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack)
+
 ![alt text](https://www.testautomation-basecamp.cz/tabMini.png "TEST AUTOMATION BASECAMP")
