@@ -17,14 +17,14 @@
 * Metodiky a strategie pro vývoj a udržování automatizovných testů, pro sběr a interpretace dat z testovacího frameworku.
 * Napíšeme si a oživíme Web Performance Test
 
-### Příprava pro on-line trénink
+## Příprava pro on-line trénink
 
 * Nainstalujte si ZOOM https://zoom.us/download#client_4meeting
 * Vyzkoušejte si kameru a sdílení obrazovky
 * Vyzkoušejte, že vám funguje mikrofon
 * Doporučuji najít si tichou místnost a použít sluchátka
 
-### Buďte připraveni a projděte si
+## Buďte připraveni a projděte si
 * Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu shlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
 * Docker https://www.zdrojak.cz/clanky/proc-pouzivat-docker/
 * Git https://git-scm.com/download/win (volitelné)
@@ -36,7 +36,7 @@
 
 
 
-### Trenér
+## Trenér
 **Radim Daniel Pánek**
 
 Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně soustředí na výzkum v oblasti test automatizace. Působí v první linii od psaní testů přes správu infrastruktury pro automatizované testy až po evangelizaci test automatizace. Školí testery a navštěvuje různé QA týmy, mentoruje a hodnotí jejich test stack.
