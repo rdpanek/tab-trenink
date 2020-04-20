@@ -47,7 +47,7 @@ Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně sous
 * Tel.: 731 011 200
 * Mail: rdpanek gmail
 
-Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack)
+Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack).
 <br/>
 <br/>
 <br/>
