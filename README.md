@@ -48,5 +48,7 @@ Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně sous
 * Mail: rdpanek gmail
 
 Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack)
-
+*
+*
+*
 ![alt text](https://www.testautomation-basecamp.cz/tabMini.png "TEST AUTOMATION BASECAMP")
