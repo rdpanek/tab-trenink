@@ -27,12 +27,18 @@
 ### Buďte připraveni a projděte si
 * Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu shlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
 * Docker https://www.zdrojak.cz/clanky/proc-pouzivat-docker/
-* Git https://git-scm.com/download/win 
+* Git https://git-scm.com/download/win (volitelné)
 * Putty https://www.putty.org/ (pro windows uživatele)
 * Nainstalujte si  - https://www.guru99.com/guide-to-install-jmeter.html a výsledek https://www.guru99.com/images/ApacheJmeterSnap.png
+* Založte si účet na githubu: https://github.com/ a projděte si:  https://www.root.cz/knihy/pro-git/
+* Zaregistrujte se zde https://hub.docker.com/
 
 
 
 
+### Trenér
+**Radim Daniel Pánek**
+
+Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně soustředí na výzkum v oblasti test automatizace. Působí v první linii od psaní testů přes správu infrastruktury pro automatizované testy až po evangelizaci test automatizace. Školí testery a navštěvuje různé QA týmy, mentoruje a hodnotí jejich test stack.
 
 ![alt text](https://www.testautomation-basecamp.cz/tabMini.png "TEST AUTOMATION BASECAMP")
