@@ -2,13 +2,13 @@
 
 **TEST STACK**
 * TEST STACK Live / Let's tests
-* hackathony
+* ClashOfTestStack, konference, offline meetupy
 * TAB a mise
 
 **Proč a co testujeme?**
 * uživatelská spokojenost
 * pátý princip testování -> hledání chyb
-* typy testů
+* typy automatizovaných testů
 
 **FE a BE**
 * infra
@@ -53,6 +53,7 @@ diagram komunikace mezi FE / BE
 * Postman
 * SOAP UI
 * VPN
+* VNC
 * TCP Dump / Wireshark
 * IDE a editory
 

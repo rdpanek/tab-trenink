@@ -8,7 +8,7 @@
 * Izolace a imutabilita pomocí Dockeru, izolace, ovládání a build
 * Kubernetes pro řešení test automatizace na úrovni infrastruktury a definice patternu 1:1:1
 * Elasticsearch, Kibana, Metricbeat a Filebeat pro live logování a tvorbu vizualizací a dashboardů test reportu
-* Definice a řízení rotace automatizovaných testů 
+* Definice a řízení rotace automatizovaných testů
 
 ### Nástroje nejsou vše
 * Webový browser, princip fungování a architektura webové aplikace
@@ -25,7 +25,7 @@
 * Doporučuji najít si tichou místnost a použít sluchátka
 
 ## Buďte připraveni a projděte si
-* Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu shlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
+* Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu zhlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
 * Docker https://www.zdrojak.cz/clanky/proc-pouzivat-docker/
 * Git https://git-scm.com/download/win (volitelné)
 * Putty https://www.putty.org/ (pro windows uživatele)
