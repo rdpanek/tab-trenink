@@ -25,7 +25,7 @@
 * Doporučuji najít si tichou místnost a použít sluchátka
 
 ## Buďte připraveni a projděte si
-* Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu shlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
+* Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu zhlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
 * Docker https://www.zdrojak.cz/clanky/proc-pouzivat-docker/
 * Git https://git-scm.com/download/win (volitelné)
 * Putty https://www.putty.org/ (pro windows uživatele)
