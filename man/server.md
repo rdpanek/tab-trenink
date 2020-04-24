@@ -135,3 +135,5 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
     - `sudo mkdir -p /usr/local/bin/`
     - `sudo install minikube /usr/local/bin/`
     - `minikube start --vm-driver=none`
+
+## 9). Kubernetes cluster na DO
