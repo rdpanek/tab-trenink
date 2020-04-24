@@ -56,6 +56,7 @@ https://github.com/rdpanek/wpt2-demo.git
     - `docker logs -f nginx`
 - použití v test automatizaci, rotace testů, klonování git repozitáře = jak dostat testy do kontejneru?
 
+**Pokračování v příkladu**
 Spusti selenium v dockeru
 docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
 
@@ -120,7 +121,8 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
 - spust rotaci `runner.sh` a sleduj výsledky v Kibaně
 
 ## 7). Kubernetes
-- popis
+- popis, kčemu je to dobré a případy využití
+- openshift
 
 ## 8). Minikube
 - Install `kubectl`
