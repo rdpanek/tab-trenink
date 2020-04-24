@@ -41,8 +41,9 @@ https://github.com/rdpanek/wpt2-demo.git
 
 ## 3). Docker
 - co a k čemu to je? => Playstation
+- windows, Linux, Unix
 - use cases
-- terminologie a příkazy
+- terminologie a příkazy `run`,`start`,`stop`,`kill`,`rm`,`images`,`logs` 
 - example1 `docker run --name test -it --rm -e MY_ENV=AHOJ ubuntu`
 - example2
     - `mkdir www`
