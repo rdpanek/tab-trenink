@@ -6,6 +6,8 @@
 
 **Linux**
 - operační systém
+    - principy a využití
+    - distribuce běžné, minimální, povolené/ověřené například v openshift
 - programy a syntaxe
     - `java -jar selenium-server-standalone-3.141.59.jar -Dwebdriver.chrome.driver=./chromedriver80`
     - `git pull origin2 panek-ui-tests`
@@ -13,6 +15,7 @@
 - příkazy `ls`, `pwd`, `ccd`, `cat`, `less`, `vim`, `cp`, `mw`, `scp`, `history`, `tail`, `curl`, `apt-get install`, `apt update`, `apt upgrade`, `echo`, `ssh`, 
 - relativní a absolutní cesta
 - stdout a stderr
+- VNC
 - přihlášení
 
 **WDIO**
