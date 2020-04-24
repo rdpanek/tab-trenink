@@ -1,5 +1,7 @@
 # TAB - CONTENT
 
+![alt text](https://github.com/rdpanek/tab-trenink/raw/master/man/mindMap.jpeg "MindMap")
+
 **TEST STACK**
 * TEST STACK Live / Let's tests
 * ClashOfTestStack, konference, offline meetupy
