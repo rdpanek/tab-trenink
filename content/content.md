@@ -16,7 +16,7 @@
 * infra
 * microservice
 * komunikace
-* slidy
+TODO: diagram komunikace mezi FE / BE
 
 **Clouds**
 * AWS
@@ -25,10 +25,6 @@
 * VPS
 * Google Cloud Platform
 * Elasticsearch Cloud
-
-TODO:
-diagram testautomatizace
-diagram komunikace mezi FE / BE
 
 **Tools / Frameworks**
 * Javascript / Java / Kotlin / Swift / PHP / Python / Go 
