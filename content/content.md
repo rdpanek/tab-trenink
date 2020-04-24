@@ -132,6 +132,11 @@ TODO: diagram komunikace mezi FE / BE
 - Blocking Request
 - Hlavicky
 - Console (funkce, querySelector, xPathSelector, addEventListener)
+   - `CMD`+`Shift`+`P`
+      - 
+   - `document.querySelectorAll('*')`
+   - `$x('//a')`
+   - `window.addEventListener('click', function() {alert("TAB")})`
 - CodeCoverage
 - Overrides > Local Modifications
 - Snippets
@@ -149,13 +154,13 @@ TODO: diagram komunikace mezi FE / BE
 - RUM & syntetické měření
     - https://g.co/chromeuxdash
     - https://crux.run/
-    - https://speedcurve.com/
-    - https://www.webpagetest.org/
-    - https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
     - Případovky https://wpostats.com/
     - Web Performance Testy
 - Nástroje a zdroje
     - Lighthouse
+    - https://speedcurve.com/
+    - https://www.webpagetest.org/
+    - https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
 - Audits a performance
     - Vahy https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=0
 - Performance > SaveProfile
