@@ -124,6 +124,7 @@ TODO: diagram komunikace mezi FE / BE
 - PWA
 - Selektory
     * xPath, CSS
+    TODO: checklist
 
 **DevTools**
 - Prozkoumat prvek
@@ -131,6 +132,11 @@ TODO: diagram komunikace mezi FE / BE
 - Blocking Request
 - Hlavicky
 - Console (funkce, querySelector, xPathSelector, addEventListener)
+   - `CMD`+`Shift`+`P`
+      - 
+   - `document.querySelectorAll('*')`
+   - `$x('//a')`
+   - `window.addEventListener('click', function() {alert("TAB")})`
 - CodeCoverage
 - Overrides > Local Modifications
 - Snippets
@@ -148,13 +154,13 @@ TODO: diagram komunikace mezi FE / BE
 - RUM & syntetické měření
     - https://g.co/chromeuxdash
     - https://crux.run/
-    - https://speedcurve.com/
-    - https://www.webpagetest.org/
-    - https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
     - Případovky https://wpostats.com/
     - Web Performance Testy
 - Nástroje a zdroje
     - Lighthouse
+    - https://speedcurve.com/
+    - https://www.webpagetest.org/
+    - https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
 - Audits a performance
     - Vahy https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=0
 - Performance > SaveProfile
@@ -162,6 +168,41 @@ TODO: diagram komunikace mezi FE / BE
 
 ## Test Automation
 TODO: diagram testautomatizace FE
+- konvencni pristup (RobotFramework, Selenium+Java) = pristup stary 10let
+- wpt / canarytrace
 
+**Větvení programu v automatizovaném testu**
+![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.png "Alza div")
 
+> Proč se v rámci E2E GUI test automatizace věnovat prohlížeči a javascriptu?
+```javascript
+// Example 1
+const targetElement = document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow')
+const config = { attributes: true, childList: true, subtree: true };
+let callback = function(mutationsList, observer) {
+    let acceptChangesButton = document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow')
+    if ( acceptChangesButton != null ) {
+        console.log('Fortuna yellow button detected!')
+        acceptChangesButton.click()
+    }
+    console.log('Any changes on bet button detected!')
+};
+const observer = new MutationObserver(callback);
+observer.observe(targetElement, config);
+
+// Example 2
+setInterval(()=>{let targetButton=document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow');if(targetButton!=null){targetButton.click()}},100);
+```
+
+> Odstranění elementu podle zIndexu
+```javascript
+$.map($('body *'), function(e,n) {
+   let zindex = $(e).css('z-index')
+      if (zindex > 0) {
+      console.log(zindex)
+      console.log(e)
+      // e.delete()
+   }
+})
+```
 
