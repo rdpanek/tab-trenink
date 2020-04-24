@@ -3,6 +3,7 @@
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
 - Spuštění dropletu pro účastníky z uloženého image
+- Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 
 **Linux**
 - operační systém
