@@ -2,15 +2,6 @@
 
 ## 1). Run DO droplets
 
-## Example s WPT
-
-- Vysvetlit, jak funguje test automatizace frontendu
-- konvencni frameworky
-- web performance test / a jak funguje wpt
-- jak se sestavuje test stack
-- misto toho pouzit docker
-
-
 Spusti selenium v dockeru
 docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
 
@@ -19,17 +10,6 @@ https://github.com/rdpanek/wpt2-demo.git
 
 - v `runner.sh` odstranit elastic
 - spustit test
-
-# Pridat do hry Elastic
-
-- `sysctl -w vm.max_map_count=262144`
-- `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
-- `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
-ottps://github.com/rdpanek/wpt2-demo.git
-- projit elasticsearch, logy a kibanu
-- nahrat mapping pro wpt2-performance-entries index
-- spustit test
-- v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
 
 # Rotace
 - v runneru nastavit vice otocek, napr. 10
@@ -83,7 +63,16 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
     - `sudo install minikube /usr/local/bin/`
     - `minikube start --vm-driver=none`
 
-## 2). Install Elasticsearch & Kibana
+# 2). Pridat do hry Elastic
+
+- `sysctl -w vm.max_map_count=262144`
+- `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
+- `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
+ottps://github.com/rdpanek/wpt2-demo.git
+- projit elasticsearch, logy a kibanu
+- nahrat mapping pro wpt2-performance-entries index
+- spustit test
+- v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
 
 ## 3). WDIO tests
 
