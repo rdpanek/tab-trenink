@@ -137,3 +137,5 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
     - `minikube start --vm-driver=none`
 
 ## 9). Kubernetes cluster na DO
+
+## 10). Elasticsearch Cloud
