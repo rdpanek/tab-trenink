@@ -123,8 +123,8 @@ TODO: diagram komunikace mezi FE / BE
     - https://www.vzhurudolu.cz/ebook-amp/
 - PWA
 - Selektory
-    * xPath, CSS
-    TODO: checklist
+    * xPath https://devhints.io/xpath
+    * CSS Selector
 
 **DevTools**
 - Prozkoumat prvek
