@@ -169,8 +169,8 @@ TODO: diagram testautomatizace FE
 **Větvení programu v automatizovaném testu**
 ![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.png "Alza div")
 
-**Proč se v rámci E2E GUI test automatizace věnovat prohlížeči a javascriptu**
-```
+> Proč se v rámci E2E GUI test automatizace věnovat prohlížeči a javascriptu?
+```javascript
 // Example 1
 const targetElement = document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow')
 const config = { attributes: true, childList: true, subtree: true };
@@ -189,5 +189,15 @@ observer.observe(targetElement, config);
 setInterval(()=>{let targetButton=document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow');if(targetButton!=null){targetButton.click()}},100);
 ```
 
-
+> odstraneni elementu podle zIndexu
+```javascript
+$.map($('body *'), function(e,n) {
+   let zindex = $(e).css('z-index')
+      if (zindex > 0) {
+      console.log(zindex)
+      console.log(e)
+      // e.delete()
+   }
+})
+```
 
