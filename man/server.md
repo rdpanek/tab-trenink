@@ -40,6 +40,20 @@ https://github.com/rdpanek/wpt2-demo.git
 - spustit test
 
 ## 3). Docker
+- co a k čemu to je? => Playstation
+- use cases
+- terminologie a příkazy
+- example1 `docker run --name test -it --rm -e MY_ENV=AHOJ ubuntu`
+- example2
+    - `mkdir www`
+    - `touch www/index.html`
+    - `vim www/index.html`
+    - přidej text `<H1>Muj prvni webovy server</H1>`
+    - zjisti si absolutní cestu `pwd`
+    - `docker run --name nginx -v /Users/rdpanek/HTDOCS/temp/www:/usr/share/nginx/html:ro -d -p 8080:80 nginx`
+    - do browseru zadej `localhost:8080`
+    - `docker logs -f nginx`
+- použití v test automatizaci, rotace testů, klonování git repozitáře = jak dostat testy do kontejneru?
 
 Spusti selenium v dockeru
 docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
