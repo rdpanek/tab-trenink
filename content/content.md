@@ -189,7 +189,7 @@ observer.observe(targetElement, config);
 setInterval(()=>{let targetButton=document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow');if(targetButton!=null){targetButton.click()}},100);
 ```
 
-> odstraneni elementu podle zIndexu
+> Odstranění elementu podle zIndexu
 ```javascript
 $.map($('body *'), function(e,n) {
    let zindex = $(e).css('z-index')
