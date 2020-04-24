@@ -110,7 +110,7 @@ TODO: diagram komunikace mezi FE / BE
     * módy
 * tail -f -n100 ./server.log
 
-**Browser**
+### Browser
 - Co je úkolem browseru
 - HTML, CSS, Javascript, Webasembly
 - Jak funguje browser
@@ -119,13 +119,27 @@ TODO: diagram komunikace mezi FE / BE
 - PWM
 - Selektory
     * xPath, CSS
+
+**DevTools**
+- Prozkoumat prvek
+- Network > SaveHar
+- Blocking Request
+- Hlavicky
+- Console (funkce, querySelector, xPathSelector, addEventListener)
 - CodeCoverage
 - Overrides > Local Modifications
-- Network > SaveHar
+- Snippets
+
+**Web Api**
+- performanceEntries, performanceMark (https://developer.mozilla.org/en-US/docs/Web/API)
+
+**Rychlost nacitani webu**
 - Performance > SaveProfile
 - Audits, performance
-- Blocking Request
-- Console (funkce, querySelector, xPathSelector, addEventListener
-- performanceEntries, performanceMark (https://developer.mozilla.org/en-US/docs/Web/API)
-- prozkoumatPrvek
-- Hlavicky
+
+
+## Test Automation
+TODO: diagram testautomatizace FE
+
+
+
