@@ -17,6 +17,7 @@
 - relativní a absolutní cesta
 - stdout a stderr
 - VNC
+- jumpserver / protunelování
 - přihlášení
 
 **WDIO**
@@ -26,8 +27,10 @@
 
 ## 2). Git
 - popsat Git
-- ukazat tig
-- top prikazy
+- ukazat tig `tig --all`
+- top prikazy `clone`,`status`,`commit`,`push`,`pull`,`rebase`,`stash`,`reset`
+- větvení, git-flow https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+- konflikty
 
 Clone wpt2-demo
 https://github.com/rdpanek/wpt2-demo.git
