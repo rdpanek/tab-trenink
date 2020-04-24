@@ -1,4 +1,4 @@
-# TAB - PREPARATION
+# TAB - SERVER
 
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
