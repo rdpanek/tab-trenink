@@ -19,7 +19,7 @@
 
 ## Příprava pro on-line trénink
 
-* Nainstalujte si ZOOM https://zoom.us/download#client_4meeting
+* Před konáním tréninku vám příjde link na Meet od Google
 * Vyzkoušejte si kameru a sdílení obrazovky
 * Vyzkoušejte, že vám funguje mikrofon
 * Doporučuji najít si tichou místnost a použít sluchátka
