@@ -124,6 +124,7 @@ TODO: diagram komunikace mezi FE / BE
 - PWA
 - Selektory
     * xPath, CSS
+    TODO: checklist
 
 **DevTools**
 - Prozkoumat prvek
@@ -167,6 +168,26 @@ TODO: diagram testautomatizace FE
 
 **Větvení programu v automatizovaném testu**
 ![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.png "Alza div")
+
+**Proč se v rámci E2E GUI test automatizace věnovat prohlížeči a javascriptu**
+```
+// Example 1
+const targetElement = document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow')
+const config = { attributes: true, childList: true, subtree: true };
+let callback = function(mutationsList, observer) {
+    let acceptChangesButton = document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow')
+    if ( acceptChangesButton != null ) {
+        console.log('Fortuna yellow button detected!')
+        acceptChangesButton.click()
+    }
+    console.log('Any changes on bet button detected!')
+};
+const observer = new MutationObserver(callback);
+observer.observe(targetElement, config);
+
+// Example 2
+setInterval(()=>{let targetButton=document.querySelector('div.ticket_summary__submit div.fortuna_button--yellow');if(targetButton!=null){targetButton.click()}},100);
+```
 
 
 
