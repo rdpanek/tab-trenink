@@ -133,7 +133,7 @@ TODO: diagram komunikace mezi FE / BE
 - Hlavicky
 - Console (funkce, querySelector, xPathSelector, addEventListener)
    - `CMD`+`Shift`+`P`
-      - 
+      - ![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/devToolsFunkce.png "DevTools")
    - `document.querySelectorAll('*')`
    - `$x('//a')`
    - `window.addEventListener('click', function() {alert("TAB")})`
