@@ -166,7 +166,7 @@ TODO: diagram testautomatizace FE
 - wpt / canarytrace
 
 **Větvení programu v automatizovaném testu**
-![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.jpeg "Alza div")
+![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.png "Alza div")
 
 
 
