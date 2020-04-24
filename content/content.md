@@ -6,6 +6,7 @@
 * TEST STACK Live / Let's tests
 * ClashOfTestStack, konference, offline meetupy
 * TAB a mise
+* Jak TAB probíhá + sdílený dokument
 
 **Proč a co testujeme?**
 * uživatelská spokojenost
@@ -113,10 +114,14 @@ TODO: diagram komunikace mezi FE / BE
 ### Browser
 - Co je úkolem browseru
 - HTML, CSS, Javascript, Webasembly
+- Buď doménový specialista a drž se v obraze
+    - https://www.chromestatus.com/features#milestone%3D75
+    - https://twitter.com/ChromiumDev
 - Jak funguje browser
 - Jak fungují webovky
 - AMP
-- PWM
+    - https://www.vzhurudolu.cz/ebook-amp/
+- PWA
 - Selektory
     * xPath, CSS
 
@@ -134,8 +139,25 @@ TODO: diagram komunikace mezi FE / BE
 - performanceEntries, performanceMark (https://developer.mozilla.org/en-US/docs/Web/API)
 
 **Rychlost nacitani webu**
+- Nefunkcionální metriky rychlosti načítání webu
+    - slidy
+    - metriky
+    - javascript a priorita načítání zdrojů
+    - heroElementy
+    - https://httparchive.org/
+- RUM & syntetické měření
+    - https://g.co/chromeuxdash
+    - https://crux.run/
+    - https://speedcurve.com/
+    - https://www.webpagetest.org/
+    - https://search.google.com/test/mobile-friendly?id=W3KAzTwD4LLoglewG2Fclg
+    - Případovky https://wpostats.com/
+    - Web Performance Testy
+- Nástroje a zdroje
+    - Lighthouse
+- Audits a performance
+    - Vahy https://docs.google.com/spreadsheets/d/1up5rxd4EMCoMaxH8cppcK1x76n6HLx0e7jxb0e0FXvc/edit#gid=0
 - Performance > SaveProfile
-- Audits, performance
 
 
 ## Test Automation
