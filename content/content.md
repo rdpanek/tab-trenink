@@ -162,6 +162,11 @@ TODO: diagram komunikace mezi FE / BE
 
 ## Test Automation
 TODO: diagram testautomatizace FE
+- konvencni pristup (RobotFramework, Selenium+Java) = pristup stary 10let
+- wpt / canarytrace
+
+**Větvení programu v automatizovaném testu**
+![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.jpeg "Alza div")
 
 
 
