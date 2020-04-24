@@ -1,11 +1,29 @@
 # TAB - PREPARATION
 
 ## 1). Run DO droplets
+- Instalace Dropletu (virtuální stroj)
+- Spuštění dropletu pro účastníky z uloženého image
+
+**Linux**
+- operační systém
+- programy a syntaxe
+    - `java -jar selenium-server-standalone-3.141.59.jar -Dwebdriver.chrome.driver=./chromedriver80`
+    - `git pull origin2 panek-ui-tests`
+    - `tail -f -n1000 ./myLog.log`
+- příkazy `ls`, `pwd`, `ccd`, `cat`, `less`, `vim`, `cp`, `mw`, `scp`, `history`, `tail`, `curl`, `apt-get install`, `apt update`, `apt upgrade`, `echo`, `ssh`, 
+- relativní a absolutní cesta
+- stdout a stderr
+- přihlášení
 
 **WDIO**
 - popsat WDIO
 - nainstalovat a spustit si test https://webdriver.io/docs/gettingstarted.html
 - jak to šlo? dost pracné, co stím?
+
+## 2). Git
+- popsat Git
+- ukazat tig
+- top prikazy
 
 Clone wpt2-demo
 https://github.com/rdpanek/wpt2-demo.git
@@ -13,6 +31,8 @@ https://github.com/rdpanek/wpt2-demo.git
 - co jste naklonovali, co to dělá?
 - v `runner.sh` odstranit elastic
 - spustit test
+
+## 3). Docker
 
 Spusti selenium v dockeru
 docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
