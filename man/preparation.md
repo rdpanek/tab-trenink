@@ -2,25 +2,51 @@
 
 ## 1). Run DO droplets
 
-Spusti selenium v dockeru
-docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
+**WDIO**
+- popsat WDIO
+- nainstalovat a spustit si test https://webdriver.io/docs/gettingstarted.html
+- jak to šlo? dost pracné, co stím?
 
 Clone wpt2-demo
 https://github.com/rdpanek/wpt2-demo.git
 
+- co jste naklonovali, co to dělá?
 - v `runner.sh` odstranit elastic
 - spustit test
 
-# Rotace
+Spusti selenium v dockeru
+docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
+
+
+## 2). Rotace
 - v runneru nastavit vice otocek, napr. 10
 - pridat do runneru selen docker kill and run
+```
+docker kill selen
+docker rm selen
+docker run --name selen -d -p 5902:5900 -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-titanium
+```
 
-# Vizualizace
+## 3). Pridat do hry Elastic
+
+- resetovat git, aby se obnovil `runner.sh`
+- `sysctl -w vm.max_map_count=262144`
+- `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
+- `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
+ottps://github.com/rdpanek/wpt2-demo.git
+- projit elasticsearch, logy a kibanu
+- nahrat mapping pro wpt2-performance-entries index
+- spustit test
+- v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
+
+## 4). Vizualizace
 - vytvorit vizualizace v Kibane
 
-# Uprav si test podle sveho
+## 5). Uprav si test podle sveho
+- https://webdriver.io/docs/api.html
+- spust rotaci `runner.sh` a sleduj výsledky v Kibaně
 
-# Tvorba vlastniho docker image
+## 6). Tvorba vlastniho docker image s upraveným testem
 - Tvorba `Dockerfile`
 ```
 FROM rdpanek/wpt2-demo:d.2.18
@@ -49,9 +75,12 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
     - `docker login`
     - docker push `docker push rdpanek/framework:1.0`
 - uprava `runner.sh` a pouzit vlastni docker image
-- spustit rotaci
+- spust rotaci `runner.sh` a sleduj výsledky v Kibaně
 
-# Minikube
+## 7). Kubernetes
+- popis
+
+## 8). Minikube
 - Install `kubectl`
     - `curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl`
     - chmod +x ./kubectl
@@ -62,26 +91,3 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
     - `sudo mkdir -p /usr/local/bin/`
     - `sudo install minikube /usr/local/bin/`
     - `minikube start --vm-driver=none`
-
-# 2). Pridat do hry Elastic
-
-- `sysctl -w vm.max_map_count=262144`
-- `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
-- `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
-ottps://github.com/rdpanek/wpt2-demo.git
-- projit elasticsearch, logy a kibanu
-- nahrat mapping pro wpt2-performance-entries index
-- spustit test
-- v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
-
-## 3). WDIO tests
-
-## 4). RUN test
-
-## 5). Custom Dockerfile
-
-## 6). Push to dockerhub
-
-## 7). Run custom dockerfile
-
-## 8). Kubernetes
