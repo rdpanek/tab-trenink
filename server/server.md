@@ -79,6 +79,148 @@ docker run --name selen -d -p 5902:5900 -p 4444:4444 -v /dev/shm:/dev/shm seleni
 ottps://github.com/rdpanek/wpt2-demo.git
 - projit elasticsearch, logy a kibanu
 - nahrat mapping pro wpt2-performance-entries index
+```
+PUT _template/wpt2-performance-entries
+{
+	"index_patterns": ["wpt2-performance-entries-*"],
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas" : 1,
+    "index.translog.durability": "async",
+    "index.refresh_interval": "10s"
+  },
+  "version": 1,
+	"mappings": {
+		"wpt2-performance-entries": {
+			"properties": {
+				"connectEnd": {
+					"type": "float"
+				},
+				"connectStart": {
+					"type": "float"
+				},
+				"decodedBodySize": {
+					"type": "integer"
+				},
+				"domComplete": {
+					"type": "float"
+				},
+				"domContentLoadedEventEnd": {
+					"type": "float"
+				},
+				"domContentLoadedEventStart": {
+					"type": "float"
+				},
+				"domInteractive": {
+					"type": "float"
+				},
+				"domainLookupEnd": {
+					"type": "float"
+				},
+				"domainLookupStart": {
+					"type": "float"
+				},
+				"duration": {
+					"type": "float"
+				},
+				"encodedBodySize": {
+					"type": "integer"
+				},
+        "sequence" : {
+          "type" : "long"
+        },
+				"entryType": {
+					"type": "keyword"
+				},
+				"fetchStart": {
+					"type": "float"
+				},
+				"initiatorType": {
+					"type": "keyword"
+				},
+				"loadEventEnd": {
+					"type": "float"
+				},
+				"loadEventStart": {
+					"type": "float"
+				},
+				"name": {
+					"type": "keyword"
+				},
+				"nextHopProtocol": {
+					"type": "keyword"
+				},
+				"redirectCount": {
+					"type": "short"
+				},
+				"redirectEnd": {
+					"type": "float"
+				},
+				"redirectStart": {
+					"type": "float"
+				},
+				"requestStart": {
+					"type": "float"
+				},
+				"responseEnd": {
+					"type": "float"
+				},
+				"responseStart": {
+					"type": "float"
+				},
+				"responseTime": {
+					"type": "float"
+				},
+				"ttfb": {
+					"type": "float"
+				},
+				"secureConnectionStart": {
+					"type": "float"
+				},
+				"serverTiming": {
+					"type": "object"
+				},
+				"startTime": {
+					"type": "float"
+				},
+				"toJSON": {
+					"type": "object"
+				},
+				"transferSize": {
+					"type": "long"
+				},
+				"type": {
+					"type": "keyword"
+				},
+				"unloadEventEnd": {
+					"type": "float"
+				},
+				"unloadEventStart": {
+					"type": "float"
+				},
+				"workerStart": {
+					"type": "float"
+				},
+        "timestamp": {
+          "type": "date"
+        },
+        "uuidAction": {
+          "type": "text"
+        },
+        "env": {
+  				"type": "keyword"
+  			},
+        "spec": {
+  				"type": "keyword"
+  			},
+        "context": {
+  				"type": "keyword"
+  			}
+			}
+		}
+	}
+}
+```
 - spustit test
 - v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
 
