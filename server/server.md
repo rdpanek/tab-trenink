@@ -278,9 +278,9 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 ### Nasadit wpt
 - ConfigMap `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/config-maps.yaml`
 - Secrets `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/secret-elastic.yaml`
-> Změnit IP k elasticu
+- Změnit IP k elasticu
 - CronJobs `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/wpt-performance-testing.yaml`
-> Změnit název docker image
+- Změnit název docker image
 - `kubectl create -f`, `get pods`, `get cronjobs`, `get secrets`, `describe pod`, `edit configmap wpt2-runner`, `delete -f`
 
 ## 9). Kubernetes cluster na DO
