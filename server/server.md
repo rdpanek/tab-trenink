@@ -12,7 +12,8 @@
 - `ssh-add` - jinak bude remote-exec provisioner čekat na zadaní paswd
 - `alias tf=terraform`
 - `tf init`
-- `tf apply`
+- `tf apply` => zobrazí se plan => pokračovat `yes`
+- `tf destroy`
 
 **Linux**
 - operační systém
