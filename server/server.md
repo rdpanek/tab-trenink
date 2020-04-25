@@ -76,7 +76,7 @@ docker run --name selen -d -p 5902:5900 -p 4444:4444 -v /dev/shm:/dev/shm seleni
 - `sysctl -w vm.max_map_count=262144`
 - `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
 - `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
-ottps://github.com/rdpanek/wpt2-demo.git
+- https://github.com/rdpanek/wpt2-demo.git
 - projit elasticsearch, logy a kibanu
 - nahrat mapping pro wpt2-performance-entries index
 - spustit test
