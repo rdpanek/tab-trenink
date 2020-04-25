@@ -10,6 +10,7 @@
 - `export DIGITALOCEAN_TOKEN="your_token_here"`
 - `export TF_VAR_do_token=$DIGITALOCEAN_TOKEN`
 - `ssh-add` - jinak bude remote-exec provisioner čekat na zadaní paswd
+-  Nainstalovat [terraform api](https://learn.hashicorp.com/terraform/getting-started/install.html)
 - `alias tf=terraform`
 - `tf init`
 - Nastavit počet dropletů `tf/droplets.tf`
