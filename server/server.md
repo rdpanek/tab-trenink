@@ -14,6 +14,7 @@
     - `git pull origin2 panek-ui-tests`
     - `tail -f -n1000 ./myLog.log`
 - příkazy `ls`, `pwd`, `cd`, `cat`, `less`, `vim`, `cp`, `mv`, `scp`, `history`, `tail`, `curl`, `apt-get install`, `apt update`, `apt upgrade`, `echo`, `ssh`, 
+- `Control+C`
 - relativní a absolutní cesta
 - stdout a stderr
 - VNC
@@ -62,8 +63,8 @@ docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone
 
 
 ## 2). Rotace
-- v runneru nastavit vice otocek, napr. 10
-- pridat do runneru selen docker kill and run
+- v `runner.sh` nastavit vice otoček, napr. 10
+- přidat do `runner.sh` selen docker kill and run
 ```
 docker kill selen
 docker rm selen
@@ -222,10 +223,10 @@ PUT _template/wpt2-performance-entries
 }
 ```
 - spustit test
-- v Kibane vytvorit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
+- v Kibaně vytvořit index patterns `wpt2-performance-entries-*` a `wpt2-report-*`
 
 ## 4). Vizualizace
-- vytvorit vizualizace v Kibane
+- vytvořit vizualizace v Kibaně
 
 ## 5). Uprav si test podle sveho
 - https://webdriver.io/docs/api.html
@@ -263,7 +264,7 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
 - spust rotaci `runner.sh` a sleduj výsledky v Kibaně
 
 ## 7). Kubernetes
-- popis, kčemu je to dobré a případy využití
+- popis, k čemu je to dobré a případy využití
 - openshift
 
 ## 8). Minikube
