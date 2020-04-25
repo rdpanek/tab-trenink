@@ -13,7 +13,7 @@
     - `java -jar selenium-server-standalone-3.141.59.jar -Dwebdriver.chrome.driver=./chromedriver80`
     - `git pull origin2 panek-ui-tests`
     - `tail -f -n1000 ./myLog.log`
-- příkazy `ls`, `pwd`, `ccd`, `cat`, `less`, `vim`, `cp`, `mv`, `scp`, `history`, `tail`, `curl`, `apt-get install`, `apt update`, `apt upgrade`, `echo`, `ssh`, 
+- příkazy `ls`, `pwd`, `cd`, `cat`, `less`, `vim`, `cp`, `mv`, `scp`, `history`, `tail`, `curl`, `apt-get install`, `apt update`, `apt upgrade`, `echo`, `ssh`, 
 - relativní a absolutní cesta
 - stdout a stderr
 - VNC
