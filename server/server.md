@@ -6,6 +6,15 @@
 - Spuštění dropletu pro účastníky z uloženého image
 - Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 
+**Terraform**
+- `export DIGITALOCEAN_TOKEN="your_token_here"`
+- `export TF_VAR_do_token=$DIGITALOCEAN_TOKEN`
+- `ssh-add` - jinak bude remote-exec provisioner čekat na zadaní paswd
+- `alias tf=terraform`
+- `tf init`
+- `tf apply` => zobrazí se plan => pokračovat `yes`
+- `tf destroy`
+
 **Linux**
 - operační systém
     - principy a využití
