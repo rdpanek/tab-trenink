@@ -47,6 +47,7 @@ Dlouhá léta pracoval jako vývojář a v posledních osmi letech se plně sous
 * Tel.: 731 011 200
 * Mail: rdpanek gmail
 
+Pokud se ti trénink líbil, dej hvězdičku a sleduj změny. Super bude určitě tvá recenze a nebo post na socialní síti twitter, linkedin atp. + mě označ, a využij tagu `#testAutomationBasecamp` díky :-) 
 Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack).
 <br/>
 <br/>
