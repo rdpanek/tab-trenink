@@ -2,6 +2,7 @@
 
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
+	- `wpt2-demo-docker-vnc-dns-google-chrome-v2`
 - Spuštění dropletu pro účastníky z uloženého image
 - Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 
@@ -268,16 +269,11 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
 - openshift
 
 ## 8). Minikube
-- Install `kubectl`
-    - `curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl`
-    - chmod +x ./kubectl
-    - ./kubectl
-    - `sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y apt-transport-https gnupg2`
 - Install `minikube`
-    - `curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube`
-    - `sudo mkdir -p /usr/local/bin/`
-    - `sudo install minikube /usr/local/bin/`
-    - `minikube start --vm-driver=none`
+```
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && \ apt install conntrack
+```
+- Spustit `./minikube start --driver=none`
 
 ## 9). Kubernetes cluster na DO
 
