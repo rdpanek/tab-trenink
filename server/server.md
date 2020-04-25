@@ -6,6 +6,9 @@
 - Spuštění dropletu pro účastníky z uloženého image
 - Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 
+**Terraform**
+- `export DIGITALOCEAN_TOKEN="your_token_here"`
+
 **Linux**
 - operační systém
     - principy a využití
