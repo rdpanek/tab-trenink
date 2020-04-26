@@ -282,7 +282,7 @@ ENTRYPOINT [ "./node_modules/.bin/wdio" ]
 ## 8). Minikube
 - Install `minikube`
 ```
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && \ apt install conntrack
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && apt install conntrack
 ```
 - Spustit `./minikube start --driver=none`
 
