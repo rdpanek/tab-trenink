@@ -144,8 +144,7 @@ TODO: diagram komunikace mezi FE / BE
 **Web Api**
 - performanceEntries, performanceMark (https://developer.mozilla.org/en-US/docs/Web/API)
 
-#rychlost-nacitani-webu
-**Rychlost nacitani webu**
+[**Rychlost nacitani webu**](#rychlost-nacitani-webu)
 - Nefunkcionální metriky rychlosti načítání webu
     - slidy
     - metriky
