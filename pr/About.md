@@ -8,7 +8,7 @@ https://www.testautomation-basecamp.cz/
 **TEST AUTOMATION BASECAMP (TAB)** je online trénink test automatizace pro testery začátečníky a pokročilé, test managery a test leady.
 
 
-## |O čem se na TABu bavíme
+## O čem se na TABu bavíme
 
 Frontend a backend, infrastruktura, microservice, sniffing komunikace, cloudové služby AWS, Digitalocean, Azure, VPS, Google Cloud Platform, Elasticsearch Cloud, Blazemeter, Saucelabs, programovací jazyky, Javascript, Java, Kotlin, Swift, PHP, Python, Go, frameworky, webdriver.io, cypress.io, robot framework, cucumber java a selenium, k6.io, gatling, jmeter, taurus, relační a document-based databáze, elasticsearch, kibana, logstash, beats, grafana, git a tig, XCode a UI testing, Android studio, Espresso, UI Automator, Postman, SOAP UI, VPN, VNC, TCP Dump, Wireshark, IDE a editory, HTML, CSS, JSON, TCP, UDP, Websockety, Fronty, Docker, Kubernetes, Openshift, Terraform, proxy, F5, nginx, datacentra, hardware, metriky, live logování, operační systémy, linux a příkazy, browser a jak funguje browser, webasembly, jak fungují webové aplikace, AMP, PWA, selektory, devtools, WebApi a řízení automatizovaných testů na úrovni infrastruktury.
 
@@ -49,6 +49,15 @@ https://github.com/rdpanek/wdio-trenink/blob/master/README.md
 - Po absolvování TABu získává tester 1h konzultaci, jak nové zkušenosti využít ve své firmě.
 - Let’s test je nový formát navazujícího a kontinuálního vzdělávání. Probíhá formou livestreamu na https://www.twitch.tv/rdpanek a prakticky obden může tester sledovat a ptát se jak psát testy, jak se pracuje s gitem, dockerem, jak se staví test automation infrastruktura v praxi a s dalšími nástroji se kterými se seznámil na TABu.
 
+
+## Jak TAB probíhá a jaké jsou prerekvizity
+
+Více info https://github.com/rdpanek/tab-trenink/blob/master/README.md
+
+
+## Hashtag a webová prezentace
+- oficiální hashtag `#testAutomationBasecamp`
+- aktuální termíny https://www.testautomation-basecamp.cz/
 
 ## Reference
 
