@@ -70,4 +70,9 @@ Více info https://github.com/rdpanek/tab-trenink/blob/master/README.md
 ## Grafika
 
 **Transparentní logo**
+
 ![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/TAB.png "TEST AUTOMATION BASECAMP")
+
+**Banner**
+
+![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/banner.png "TEST AUTOMATION BASECAMP")
