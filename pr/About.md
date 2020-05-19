@@ -69,6 +69,11 @@ Více info https://github.com/rdpanek/tab-trenink/blob/master/README.md
 
 ## Grafika
 
+**Přípustné barevné kombinace**
+- světlá `#e6e6e6`
+- růžová `#ff00a1`
+- tmavě modrá `#26323f`
+
 **Transparentní logo**
 
 ![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/TAB.png "TEST AUTOMATION BASECAMP")
