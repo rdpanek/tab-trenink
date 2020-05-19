@@ -30,16 +30,16 @@ Tester získá rozsáhlý přehled o různých nástrojích, metodikách, způso
 
 ## Formáty TAB
 
-- **TEST AUTOMATION BASECAMP** je celovíkendový online trénink s praxí
+- **TEST AUTOMATION BASECAMP** je praktický celovíkendový online trénink.
 https://github.com/rdpanek/tab-trenink/blob/master/content/content.md
-- **TEST AUTOMATION BASECAMP Mini** je jednodenní trénink s výkladem a ukázkami.
+- **TEST AUTOMATION BASECAMP Mini** je jednodenní trénink pouze s výkladem a ukázkami.
 https://github.com/rdpanek/tab-trenink/blob/master/content/content.md
 
 ## TAB Extended
 
-- **WDIO** je dvoudenní trénink se zaměřením na specializaci funkcionálního a nefunkcionálního testování browseru a analýzy frontendu. 
+- **WDIO** je praktický dvoudenní trénink se zaměřením na specializaci funkcionálního a nefunkcionálního testování browseru a analýzy frontendu. 
 https://github.com/rdpanek/wdio-trenink/blob/master/README.md
-- **WDIO Mini** je jednodenní trénink s výkladem a ukázkami.
+- **WDIO Mini** je jednodenní trénink pouze s výkladem a ukázkami.
 https://github.com/rdpanek/wdio-trenink/blob/master/README.md
 
 
