@@ -65,3 +65,9 @@ Více info https://github.com/rdpanek/tab-trenink/blob/master/README.md
 - Marek Lukáš "... ještě jednom moc děkuji za TAB, byl skvělý"
 - Eva Rychterová "... ještě jednou díky za workshop, bylo to super."
 - Jiří Zifčák "... ještě jednou díky za skvělé školení. Mám hlavu jak balón narvanou novými informacemi a postupně si je třídím. Koukal jsem na PDF a vypadají parádně. Těším se, až se na ně vrhu a pročtu si je. Hodně se mi také líbil styl prezentace, jakým způsobem jsi ji měl udělanou."
+
+
+## Grafika
+
+**Transparentní logo**
+![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/TAB.png "TEST AUTOMATION BASECAMP")
