@@ -74,10 +74,27 @@ Více info https://github.com/rdpanek/tab-trenink/blob/master/README.md
 - růžová `#ff00a1`
 - tmavě modrá `#26323f`
 
-**Transparentní logo**
+**TAB: transparentní logo**
 
 ![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/TAB.png "TEST AUTOMATION BASECAMP")
 
-**Banner**
+**TAB: banner**
 
 ![alt text](https://github.com/rdpanek/tab-trenink/blob/master/pr/banner.png "TEST AUTOMATION BASECAMP")
+
+
+**Let's test: transparentní logo**
+
+![alt text](https://github.com/rdpanek/letstest/blob/master/grafika/letstest.png "Let's test")
+
+**Let's test: banner A**
+
+![alt text](https://github.com/rdpanek/letstest/blob/master/grafika/letsTestBannerOffline.png "Let's test")
+
+**Let's test: banner B**
+
+![alt text](https://github.com/rdpanek/letstest/blob/master/grafika/banner.png "Let's test")
+
+**Let's test: banner C**
+
+![alt text](https://github.com/rdpanek/letstest/blob/master/grafika/twichHeader.png "Let's test")
