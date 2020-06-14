@@ -1,7 +1,9 @@
 # TEST AUTOMATION BASECAMP
 [testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/)
 
-> Trénink se koná online 25.-26.04.2020 vždy od 09:00 do 16:00 a adresa pro připojení vám přijde v pozvánce do kalendáře nejpozději den před začátkem tréninku.
+> Trénink se koná online 11.-12.07.2020 vždy od 09:00 do 16:00 a adresa pro připojení vám přijde v pozvánce do kalendáře nejpozději den před začátkem tréninku.
+
+**Nově je k dispozici TAB Mini** Obsah stejný ale je zhuštěn do jednoho dne. Pouze výklad a plno praktických ukázek. Více info na [testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/)
 
 ### Návyky při používání nástrojů
 * Git bez GUI, instalace a ovládání
