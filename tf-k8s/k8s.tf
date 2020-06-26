@@ -2,10 +2,10 @@ resource "digitalocean_kubernetes_cluster" "tab" {
 
   name     = "tabk8s"
   region   = "fra1"
-  version = "1.16.8-do.0"
+  version = "1.18.3-do.0"
   node_pool {
     name       = "tabpool"
-    size       = "s-2vcpu-4gb"
+    size       = "s-4vcpu-8gb"
     node_count = 1
   }
   tags    = ["tab"]
