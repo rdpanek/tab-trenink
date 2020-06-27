@@ -29,18 +29,6 @@ resource "digitalocean_droplet" "tab" {
     user = "root"
     host = self.ipv4_address
   }
-
-  provisioner "remote-exec" {
-    inline = [
-        "sudo killall apt apt-get",
-        "sudo rm /var/lib/apt/lists/lock",
-        "sudo rm /var/cache/apt/archives/lock",
-        "sudo rm /var/lib/dpkg/lock*",
-        "sudo dpkg --configure -a",
-        "sudo apt update",
-        "cd /opt && curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && apt install conntrack"
-    ]
-  }
 }
 
 output "ip" {
