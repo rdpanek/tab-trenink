@@ -1,4 +1,4 @@
-# TAB - SERVER
+# TAB - Dockerizovaný E2E test v kubernetes s live logováním
 
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
@@ -13,7 +13,7 @@
 -  Nainstalovat [terraform cli klienta](https://learn.hashicorp.com/terraform/getting-started/install.html)
 - `alias tf=terraform`
 - `tf init`
-- Nastavit počet dropletů `tf/droplets.tf`
+- Nastavit počet dropletů `tf-droplets/droplets.tf`
 - `tf apply` => zobrazí se plan => pokračovat `yes`
 - `tf destroy`
 
