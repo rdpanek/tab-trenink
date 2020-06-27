@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Linux only
+LOCAL_IP=$(hostname -I | awk '{print $1}')
+
 for i in `seq 1 1`;
 do
 echo "otoceni: ${i}"
@@ -21,7 +24,7 @@ do
         -e ELASTIC_CLUSTER=elastic:9200 \
         --link elastic:elastic \
         --link selen:selen \
-        -v /Users/rdpanek/HTDOCS/teststack/canarytrace/tests/:/tmp/canary-tests \
+        -v /opt/canary-tests/:/tmp/canary-tests \
         rdpanek/canarytrace-developer:c.2.9.10
         break
     fi
