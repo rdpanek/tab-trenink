@@ -45,11 +45,11 @@
 - větvení, git-flow https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 - konflikty
 
-Clone wpt2-demo
-https://github.com/rdpanek/wpt2-demo.git
+Clone Canarytrace demo
+https://github.com/rdpanek/tab-trenink.git
 
 - co jste naklonovali, co to dělá?
-- v `runner.sh` odstranit elastic
+- v `server/runnerdocker.sh` odstranit elastic
 - spustit test
 
 ## 3). Docker
@@ -64,7 +64,7 @@ https://github.com/rdpanek/wpt2-demo.git
     - `vim www/index.html`
     - přidej text `<H1>Muj prvni webovy server</H1>`
     - zjisti si absolutní cestu `pwd`
-    - `docker run --name nginx -v /Users/rdpanek/HTDOCS/temp/www:/usr/share/nginx/html:ro -d -p 8080:80 nginx`
+    - `docker run --name nginx -v /opt/www:/usr/share/nginx/html:ro -d -p 8080:80 nginx`
     - do browseru zadej `localhost:8080`
     - `docker logs -f nginx`
 - použití v test automatizaci, rotace testů, klonování git repozitáře = jak dostat testy do kontejneru?
@@ -75,13 +75,8 @@ docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone
 
 
 ## 2). Rotace
-- v `runner.sh` nastavit vice otoček, napr. 10
-- přidat do `runner.sh` selen docker kill and run
-```
-docker kill selen
-docker rm selen
-docker run --name selen -d -p 5902:5900 -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-titanium
-```
+- v `server/runnerdocker.sh` nastavit vice otoček, napr. 10
+- přidat do `server/runnerdocker.sh` selen docker kill and run
 
 ## 3). Pridat do hry Elastic
 
