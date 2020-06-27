@@ -1,4 +1,4 @@
-# TAB - SERVER
+# TAB - Dockerizovaný E2E test v kubernetes s live logováním
 
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
@@ -13,7 +13,7 @@
 -  Nainstalovat [terraform cli klienta](https://learn.hashicorp.com/terraform/getting-started/install.html)
 - `alias tf=terraform`
 - `tf init`
-- Nastavit počet dropletů `tf/droplets.tf`
+- Nastavit počet dropletů `tf-droplets/droplets.tf`
 - `tf apply` => zobrazí se plan => pokračovat `yes`
 - `tf destroy`
 
@@ -295,5 +295,10 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 - `kubectl create -f`, `get pods`, `get cronjobs`, `get secrets`, `describe pod`, `edit configmap wpt2-runner`, `delete -f`
 
 ## 9). Kubernetes cluster na DO
+- vytvoření Kubernetes clusteru pomoci terraformu `tf-k8s`
 
-## 10). Elasticsearch Cloud
+
+## 10). Windows 10 v Azure
+- vytvoření Kubernetes clusteru pomoci terraformu `tf-widle`
+
+## 11). Elasticsearch Cloud
