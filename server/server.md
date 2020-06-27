@@ -2,7 +2,7 @@
 
 ## 1). Run DO droplets
 - Instalace Dropletu (virtuální stroj)
-	- `wpt2-demo-docker-vnc-dns-google-chrome-v2`
+	- `canarytrace-virtual`
 - Spuštění dropletu pro účastníky z uloženého image
 - Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 

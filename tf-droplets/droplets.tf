@@ -8,15 +8,15 @@ data "digitalocean_ssh_key" "default" {
   name = "rdpanek"
 }
 
-data "digitalocean_image" "tab" {
-  name = "wpt2-demo-docker-vnc-dns-google-chrome-v2"
+data "digitalocean_image" "canarytrace" {
+  name = "canarytrace-virtual"
 }
 
-resource "digitalocean_droplet" "tab" {
+resource "digitalocean_droplet" "canarytrace" {
   count = var.vm_count
 
-  image    = data.digitalocean_image.tab.id
-  name     = "tab${count.index}"
+  image    = data.digitalocean_image.canarytrace.id
+  name     = "canarytrace${count.index}"
   region   = "fra1"
   size     = "s-4vcpu-8gb"
   monitoring = true
@@ -33,6 +33,6 @@ resource "digitalocean_droplet" "tab" {
 
 output "ip" {
   value = [
-    for instance in digitalocean_droplet.tab: instance.ipv4_address
+    for instance in digitalocean_droplet.canarytrace: instance.ipv4_address
   ]
 }
