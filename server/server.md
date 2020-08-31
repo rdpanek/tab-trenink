@@ -33,11 +33,6 @@
 - jumpserver / protunelování
 - přihlášení
 
-**WDIO**
-- popsat WDIO
-- nainstalovat a spustit si test https://webdriver.io/docs/gettingstarted.html
-- jak to šlo? dost pracné, co stím?
-
 ## 2). Git
 - popsat Git
 - ukazat tig `tig --all`
@@ -45,12 +40,10 @@
 - větvení, git-flow https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 - konflikty
 
-Clone Canarytrace demo
-https://github.com/rdpanek/tab-trenink.git
-
-- co jste naklonovali, co to dělá?
-- v `server/runnerdocker.sh` odstranit elastic
-- spustit test
+**Canarytrace & WDIO**
+- popsat WDIO
+- Jen popsat: nainstalovat a spustit si test https://webdriver.io/docs/gettingstarted.html
+- jak to šlo? dost pracné, co stím?
 
 ## 3). Docker
 - co a k čemu to je? => Playstation
@@ -68,6 +61,13 @@ https://github.com/rdpanek/tab-trenink.git
     - do browseru zadej `localhost:8080`
     - `docker logs -f nginx`
 - použití v test automatizaci, rotace testů, klonování git repozitáře = jak dostat testy do kontejneru?
+
+Clone Canarytrace demo
+https://github.com/rdpanek/tab-trenink.git
+
+- co jste naklonovali, co to dělá?
+- v `server/runnerdocker.sh` odstranit elastic
+- spustit test
 
 **Pokračování v příkladu**
 Spusti selenium v dockeru

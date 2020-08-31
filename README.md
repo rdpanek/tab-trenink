@@ -1,7 +1,7 @@
 # TEST AUTOMATION BASECAMP
 [testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/)
 
-> Trénink se koná online 11.-12.07.2020 vždy od 09:00 do 16:00 a adresa pro připojení vám přijde v pozvánce do kalendáře nejpozději den před začátkem tréninku.
+> Aktuální termíny jsou dostupné na webu [testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/). Online trénink probíhá vždy od 09:00 do 16:00 a adresa pro připojení vám přijde v pozvánce do kalendáře nejpozději den před začátkem tréninku.
 
 **Nově je k dispozici TAB Mini** Obsah stejný ale je zhuštěn do jednoho dne. Pouze výklad a plno praktických ukázek. Více info na [testautomation-basecamp.cz](https://www.testautomation-basecamp.cz/)
 
@@ -21,10 +21,10 @@
 
 ## Příprava pro on-line trénink
 
-* Před konáním tréninku vám příjde link na Meet od Google
-* Vyzkoušejte si kameru a sdílení obrazovky
-* Vyzkoušejte, že vám funguje mikrofon
-* Doporučuji najít si tichou místnost a použít sluchátka
+* Před konáním tréninku vám příjde link na Meet od Google.
+* Vyzkoušejte si kameru - je vyžadována během tréninku.
+* Vyzkoušejte, že vám funguje mikrofon.
+* Doporučuji najít si tichou místnost a použít sluchátka.
 
 ## Buďte připraveni a projděte si
 * Splňujete předpoklady účastníka http://testautomation-basecamp.cz/ + doporučuji jako další přípravu zhlédnout část livestreamu https://youtu.be/H3GPeYVZIIk?t=3167
