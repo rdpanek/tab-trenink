@@ -96,24 +96,18 @@ https://canarytrace.atlassian.net/l/c/Qbe9hCuU
 - `kubectl --kubeconfig=k8s.yaml apply -f cronjob.yaml`
 
 ## 14). Nasadit CanarySmoke
-- upravit cronjob => IP adresa elasticsearch
+- stahnout cronjob.yaml `curl -L -O https://raw.githubusercontent.com/rdpanek/tab-trenink/master/canarytrace/cronjob.yaml`
+- upravit cronjob
+    - `metadata.name`
+- upravit cronjob
+    - ELASTIC_CLUSTER `http://<droplet-ip>:9200`
+- deploy `kubectl --kubeconfig=k8s.yaml apply -f cronjob.yaml`
+- vypsat cronjob, pod, log z podu
 
 
 ## 15). Canary Pro - popsat deployment scripty
 
-### Nasadit wpt
-- ConfigMap `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/config-maps.yaml`
-- Secrets `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/secret-elastic.yaml`
-- Změnit IP k elasticu
-- CronJobs `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/wpt-performance-testing.yaml`
-- Změnit název docker image
-- `kubectl create -f`, `get pods`, `get cronjobs`, `get secrets`, `describe pod`, `edit configmap wpt2-runner`, `delete -f`
-
-## 9). Kubernetes cluster na DO
-- vytvoření Kubernetes clusteru pomoci terraformu `tf-k8s`
-
-
-## 10). Windows 10 v Azure
+## 16). Windows 10 v Azure
 - vytvoření Kubernetes clusteru pomoci terraformu `tf-widle`
 
-## 11). Elasticsearch Cloud
+## 17). Elasticsearch Cloud
