@@ -29,7 +29,7 @@
    * Play = Node library to automate Chromium, Firefox and WebKit with a single API (By Microsoft). It is a Node library to automate the Chromium, WebKit and Firefox browsers with a single API (cross-browser)
    * tabulka https://github.com/rdpanek/tab-trenink/blob/master/content/frameworks.png
    * pupik, cypress = Dispatching events, play = devtoolsProtocol nebo podobne v pripade non-chromium browseru.
-   * **Anatomy of a Click**
+   * **Anatomy of a Click / Browser Event Model**
       * Selenium
         * v ChromeDriver = HTTP Server, ktery vystavuje api, napr. click:
         * | `session/:sessionId/element/:id/click` <= command WebDriver Protocol
@@ -38,7 +38,25 @@
           * https://chromedevtools.github.io/devtools-protocol/tot/Input/#method-dispatchMouseEvent
         * | WebSocket `WebViewImpl::DispatchMouseEvents(events)` -> `client.SendCommand("Input.dispatchMouseEvent", params)`
         * v vse co chromeDriver dela je to, ze je to tenky wrapper nad DevTools, vyuziva debug prikazu a podoba se kliknuti klienta, je to nejlepsi pristup pro simulaci experience klienta
-     * Pupik je WS client a pristupuje k Devtools na primo
+     * Pupik je WS client a pristupuje k Devtools na primo ( kratsi cesta nez pres selenium, ale pouze pro chrome ) pupik je na stejne urovni jako cromedriver
+     * Cypress nepouziva debug protocol, funguje jako Selenium 1 a dispatchuje DOM events primo, coz je kratsi cesta, ale 
+        * spatne prenositelna mezi jinymi prohlizeci, takze problem pro cross-browser a cross-sites testing, protoze
+        * https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-navigate mu nic nerika
+        * zde naopak prave nastupuje vyhoda selenia
+        * v Volani Input.dispatchMouseEvent pomoci WebSocket Message (Selenium)
+        * | OS Specific routing
+        * | Find actual element x/y
+        * L-> `CGPostMouseEvent(position, ...)` na Unix / MacOS, rozdilny nez na Windows a nez na Linuxu (operating system specific)
+        * L-> `SendInput(input.size(), input.data(), ...)` Windows
+        * L-> `XTestFakeButtonEvent(display_, button_number, ... )` Linux
+     * Vysledek
+        * lepsi pristup je `Simulating Native Events` (Selenium & Puppeteer)
+        * DispatchEvents (Cypress)
+     * Rozdil muze byt v implementaci dodatecnych funkcich / eventu / domen
+     * Selenium & Browser bugs => lze vyrazne vyresit patternem 1:1:1
+     * Co se dnes ucit? => Tema: Event based test automation
+     * Chromium ( vyuziva chrome, edge, opera a dalsi desitky dalsich ( hotove jadro, ekosystem doplnku atp.), uzivatelske rozhrani, vykreslovaciho jadra Blink a engine JavaScript V8
+     * WebKit se pouziva na MacOS, v iOS jak v chrome tak i v safari. Google take commituje do WebKitu uz jen kvuli podpore AMP.
 * Webdriver.io
 * Canarytrace
 * SauceLabs, browserstack
