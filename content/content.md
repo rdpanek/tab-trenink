@@ -9,15 +9,51 @@
 * Jak TAB probíhá + sdílený dokument
 
 **Proč a co testujeme?**
-* uživatelská spokojenost
-* pátý princip testování -> hledání chyb
+* uživatelská spokojenost ( typy chyb )
+* pátý princip testování -> hledání chyb -> motivace testera / vyvojare. Neni pravda, ze vyvojar pomuze. Proto musi byt tester inovatorem.
 * typy automatizovaných testů
 
 **FE a BE**
 * infra
 * microservice
 * komunikace
-TODO: diagram komunikace mezi FE / BE
+
+**Tools / Frameworks / Stack**
+* Javascript / Java / Kotlin / Swift / PHP / Python / Go / C
+   * Co jazyk, to nastroj to i zpusob pouziti = metodika
+* RobotFramework
+* Cucumber (Java / Selenium)
+* Pupik, playwright, Cypress (retry test, https://www.electronjs.org/)
+   * + PhantomJS, Casperjs
+   * Pupik = Headless Chrome Node API". Puppeteer is a Node library which provides a high-level API to control headless Chrome over the DevTools Protocol
+   * Play = Node library to automate Chromium, Firefox and WebKit with a single API (By Microsoft)
+* Webdriver.io
+* Canarytrace
+* SauceLabs, browserstack
+* Selenium (selenium grid)
+* XCode
+* Android Studio
+* Postman
+* k6.io
+* Gatling
+* Jmeter
+* Smartmeter
+* Blazemeter
+* Taurus
+* Dynatrace
+* MySQL, PostreSQL, MSSQL, Oracle, Mongo
+* Elasticsearch
+* Kibana
+* Grafana
+* Logstash
+* Beats
+* Git / TIG
+* VPN
+* VNC
+* TCP Dump / Wireshark
+* IDE a editory
+* Lens
+* Docker, PodMan, 
 
 **Clouds**
 * AWS
@@ -26,35 +62,6 @@ TODO: diagram komunikace mezi FE / BE
 * VPS
 * Google Cloud Platform
 * Elasticsearch Cloud
-
-**Tools / Frameworks**
-* Javascript / Java / Kotlin / Swift / PHP / Python / Go 
-* RobotFramework
-* Cucumber (Java / Selenium)
-* Webdriver.io
-* SauceLabs
-* Selenium (selenium grid)
-* k6.io
-* Gatling
-* Jmeter
-* Smartmeter
-* Blazemeter
-* Taurus
-* MySQL, PostreSQL, MSSQL, Oracle, Mongo
-* Elasticsearch
-* Kibana
-* Grafana
-* Logstash
-* Beats
-* Git / TIG
-* XCode
-* Android Studio
-* Postman
-* SOAP UI
-* VPN
-* VNC
-* TCP Dump / Wireshark
-* IDE a editory
 
 **Syntaxe**
 * HTML
@@ -169,7 +176,7 @@ TODO: diagram komunikace mezi FE / BE
 ## Test Automation
 TODO: diagram testautomatizace FE
 - konvencni pristup (RobotFramework, Selenium+Java) = pristup stary 10let
-- wpt / canarytrace
+- Canarytrace
 
 **Větvení programu v automatizovaném testu**
 ![alt text](https://github.com/rdpanek/tab-trenink/raw/master/content/alzaDiv.png "Alza div")
