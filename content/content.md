@@ -31,10 +31,12 @@
    * pupik, cypress = Dispatching events, play = devtoolsProtocol nebo podobne v pripade non-chromium browseru.
    * **Anatomy of a Click**
       * Selenium
-        * | ChromeDriver = HTTP Server, ktery vystavuje api, napr. click:
-        * v `session/:sessionId/element/:id/click` <= command WebDriver Protocol
+        * v ChromeDriver = HTTP Server, ktery vystavuje api, napr. click:
+        * | `session/:sessionId/element/:id/click` <= command WebDriver Protocol
         * | `&ExecuteClickElement` in a chromeDriver
-        * v trigger event.push `MouseEvenet(kMovedMouse)` -> `MouseEvenet(kPressedMouse)` -> `MouseEvenet(kReleasedMouse)` -> `web_view->DispatchMouseEvents(events) -> session->GetCurrentFrameID()`
+        * | trigger event.push `MouseEvenet(kMovedMouse)` -> `MouseEvenet(kPressedMouse)` -> `MouseEvenet(kReleasedMouse)` -> `web_view->DispatchMouseEvents(events) -> session->GetCurrentFrameID()`
+        * | WebSocket `WebViewImpl::DispatchMouseEvents(events)` -> `client.SendCommand("Input.dispatchMouseEvent", params)`
+        * v vse co chromeDriver dela je to, ze je to tenky wrapper nad DevTools, vyuziva debug prikazu a podoba se kliknuti klienta, je to nejlepsi pristup pro simulaci experience klienta
 * Webdriver.io
 * Canarytrace
 * SauceLabs, browserstack
