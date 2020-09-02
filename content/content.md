@@ -54,6 +54,14 @@
         * DispatchEvents (Cypress)
      * Rozdil muze byt v implementaci dodatecnych funkcich / eventu / domen
      * Selenium & Browser bugs => lze vyrazne vyresit patternem 1:1:1
+        * Not Bi-Directional yet because it’s an Http server. This means things like collecting network events or console logs is very hard => nevadi, protoze mame DevTools
+     * Cypress si dal za ukol vytvorit dobre prostredi pro vyvojare
+        * Problem s multi-tab testingem.
+        * jQuery-based API.
+        * Pro paralelismus je potreba vendor-locked software
+     * Pupik je pro chrome a pro firefox
+        * neni bran jako testovaci nastroj, ale spise automatizacni
+     * Z pohledu performance, stability a debuggingu jsou si vicemene podobne.
      * Co se dnes ucit? => Tema: Event based test automation
      * Chromium ( vyuziva chrome, edge, opera a dalsi desitky dalsich ( hotove jadro, ekosystem doplnku atp.), uzivatelske rozhrani, vykreslovaciho jadra Blink a engine JavaScript V8
      * WebKit se pouziva na MacOS, v iOS jak v chrome tak i v safari. Google take commituje do WebKitu uz jen kvuli podpore AMP.
