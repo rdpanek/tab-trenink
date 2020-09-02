@@ -27,6 +27,9 @@
    * + PhantomJS, Casperjs
    * Pupik = Headless Chrome Node API". Puppeteer is a Node library which provides a high-level API to control headless Chrome over the DevTools Protocol
    * Play = Node library to automate Chromium, Firefox and WebKit with a single API (By Microsoft). It is a Node library to automate the Chromium, WebKit and Firefox browsers with a single API (cross-browser)
+   * tabulka https://github.com/rdpanek/tab-trenink/blob/master/content/frameworks.png
+   * pupik, cypress = Dispatching events, play = devtoolsProtocol nebo podobne v pripade non-chromium browseru.
+   * **Anatomy of a Click**
 * Webdriver.io
 * Canarytrace
 * SauceLabs, browserstack
