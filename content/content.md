@@ -30,6 +30,11 @@
    * tabulka https://github.com/rdpanek/tab-trenink/blob/master/content/frameworks.png
    * pupik, cypress = Dispatching events, play = devtoolsProtocol nebo podobne v pripade non-chromium browseru.
    * **Anatomy of a Click**
+      * Selenium
+        * | ChromeDriver = HTTP Server, ktery vystavuje api, napr. click:
+        * v `session/:sessionId/element/:id/click` <= command WebDriver Protocol
+        * | `&ExecuteClickElement` in a chromeDriver
+        * v trigger event.push `MouseEvenet(kMovedMouse)` -> `MouseEvenet(kPressedMouse)` -> `MouseEvenet(kReleasedMouse)` -> `web_view->DispatchMouseEvents(events) -> session->GetCurrentFrameID()`
 * Webdriver.io
 * Canarytrace
 * SauceLabs, browserstack
