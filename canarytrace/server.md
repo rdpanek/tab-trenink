@@ -1,12 +1,13 @@
-# TAB - Dockerizovaný E2E test v kubernetes s live logováním
+# TAB - Canarytrace prakticky
 
-## 1). Run DO droplets
+
+## 1). Digital ocean a deploy dropletů
 - Instalace Dropletu (virtuální stroj)
-	- `canarytrace-virtual`
+	- image: `canarytrace-virtual`
 - Spuštění dropletu pro účastníky z uloženého image
 - Můžeš experimentovat a pak stroj zabít nebo jen vypnout
 
-**Terraform**
+## 2). Terraform - příprava
 - `export DIGITALOCEAN_TOKEN="your_token_here"`
 - `export TF_VAR_do_token=$DIGITALOCEAN_TOKEN`
 - `ssh-add` - jinak bude remote-exec provisioner čekat na zadaní paswd
@@ -17,7 +18,7 @@
 - `tf apply` => zobrazí se plan => pokračovat `yes`
 - `tf destroy`
 
-**Linux**
+## 3). Linux
 - operační systém
     - principy a využití
     - distribuce běžné, minimální, povolené/ověřené například v openshift
@@ -33,25 +34,20 @@
 - jumpserver / protunelování
 - přihlášení
 
-## 2). Git
-- popsat Git
-- ukazat tig `tig --all`
-- top prikazy `clone`,`status`,`commit`,`push`,`pull`,`rebase`,`stash`,`reset`
-- větvení, git-flow https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
-- konflikty
-
-**Canarytrace & WDIO**
+## 4). Canarytrace & WDIO
 - popsat WDIO
 - Jen popsat: nainstalovat a spustit si test https://webdriver.io/docs/gettingstarted.html
 - jak to šlo? dost pracné, co stím?
+- popsat Canarytrace
 
-## 3). Docker
+## 5). Docker
 - co a k čemu to je? => Playstation
 - windows, Linux, Unix
 - use cases
 - terminologie a příkazy `run`,`start`,`stop`,`kill`,`rm`,`images`,`logs` 
 - example1 `docker run --name test -it --rm -e MY_ENV=AHOJ ubuntu`
 - example2
+    - `cd /opt` 
     - `mkdir www`
     - `touch www/index.html`
     - `vim www/index.html`
@@ -62,83 +58,48 @@
     - `docker logs -f nginx`
 - použití v test automatizaci, rotace testů, klonování git repozitáře = jak dostat testy do kontejneru?
 
-Clone Canarytrace demo
-https://github.com/rdpanek/tab-trenink.git
+## 6). Demo Canarytrace Developer
+https://canarytrace.atlassian.net/l/c/SpvT5fiM
+- kazdy z ucastniku si monitor script jinak pojmenuje
 
-- co jste naklonovali, co to dělá?
-- v `server/runnerdocker.sh` odstranit elastic
+## 7). Pokracovani v demu - Rotace
+- oduvodneni
+https://canarytrace.atlassian.net/l/c/Qbe9hCuU
+
+## 8). Vlastni docker images
+- proc a kde je dokumentace
+- https://canarytrace.atlassian.net/l/c/UmC6zp3k
+
+## 9). Pridat do hry Elastic
+- co je elastic, kibana a ekosystem
+- https://canarytrace.atlassian.net/l/c/itQcqeot
 - spustit test
 
-**Pokračování v příkladu**
-Spusti selenium v dockeru
-docker run --name selen -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-yttrium
-
-
-## 2). Rotace
-- v `server/runnerdocker.sh` nastavit vice otoček, napr. 10
-- přidat do `server/runnerdocker.sh` selen docker kill and run
-
-## 3). Pridat do hry Elastic
-
-- resetovat git, aby se obnovil `runner.sh`
-- `sysctl -w vm.max_map_count=262144`
-- `docker run --name elastic -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.7.1 bin/elasticsearch -Enetwork.host=0.0.0.0`
-- `docker run --name kibana -d --link elastic:elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:6.7.1`
-- projit elasticsearch, logy a kibanu
-- nahrat mapping pro `c.report` a `c.performance-entries` indexy buď pomocí postmana nebo v devtools v Kibaně
-- https://github.com/rdpanek/tab-trenink/tree/master/postman
-
-- spustit test
-- v Kibaně vytvořit index patterns `c.report-*` a `c.performance-entries-*`
-
-## 4). Vizualizace
+## 10). Vizualizace
 - vytvořit vizualizace v Kibaně
 
-## 5). Uprav si test podle sveho
+## 11). Hratky s dockerem
+**Uprav si test podle sveho**
 - https://webdriver.io/docs/api.html
-- spust rotaci `runner.sh` a sleduj výsledky v Kibaně
+- a spust`runner.sh` a sleduj výsledky v Kibaně
 
-## 6). Tvorba vlastniho docker image s upraveným testem
-- Tvorba `Dockerfile`
-```
-FROM rdpanek/wpt2-demo:d.2.18
-MAINTAINER Radim Daniel Pánek <rdpanek@gmail.com>
+**Prohlidni si svuj docker image**
+`docker run --name framework -it --rm --entrypoint /bin/sh rdpanek/framework:1.0`
 
-ENV APP_DIR /opt/wpt2/
-ENV TEST_DIR ${APP_DIR}/test/
-
-# Create app directory
-RUN mkdir -p ${APP_DIR} && \
-    chown -R node:node ${APP_DIR} && \
-    mkdir -p ${TEST_DIR}
-WORKDIR ${APP_DIR}
-COPY test/ ${TEST_DIR}
-RUN ls -lah $APP_DIR && \
-    ls -lah $TEST_DIR/performanceTesting
-
-USER node
-
-ENTRYPOINT [ "./node_modules/.bin/wdio" ]
-```
-
-- Build (vlastnik/framework:verze) vlastnik = user na dockerhub
-`docker build -t rdpanek/framework:1.0 .`
-- Push do dockerhub
-    - `docker login`
-    - docker push `docker push rdpanek/framework:1.0`
-- uprava `runner.sh` a pouzit vlastni docker image
-- spust rotaci `runner.sh` a sleduj výsledky v Kibaně
-
-## 7). Kubernetes
+## 12). Kubernetes
 - popis, k čemu je to dobré a případy využití
 - openshift
 
-## 8). Minikube
-- Install `minikube`
-```
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && \ apt install conntrack
-```
-- Spustit `./minikube start --driver=none`
+## 13). Vytvorit cluster na DO
+- stahnout konfiguraci, nakopirovat obsah
+- vytvorit na dropletu k8s.yaml a vlozit obsah
+- `kubectl --kubeconfig=k8s.yaml apply -f cronjob.yaml`
+
+## 14). Nasadit CanarySmoke
+- upravit cronjob => IP adresa elasticsearch
+
+
+## 15). Canary Pro - popsat deployment scripty
 
 ### Nasadit wpt
 - ConfigMap `curl -L -O https://raw.githubusercontent.com/rdpanek/wpt2-demo/dev/kube/config-maps.yaml`
