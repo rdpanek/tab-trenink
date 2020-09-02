@@ -1,5 +1,10 @@
 # TAB - Canarytrace prakticky
 
+**Prerekvizity**
+- Ucet na DigitalOcean
+- Ucet na Githubu
+- Aplikaci / Konzoli pro prihlaseni pres ssh
+
 
 ## 1). Digital ocean a deploy dropletů
 - Instalace Dropletu (virtuální stroj)
