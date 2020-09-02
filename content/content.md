@@ -35,8 +35,10 @@
         * | `session/:sessionId/element/:id/click` <= command WebDriver Protocol
         * | `&ExecuteClickElement` in a chromeDriver
         * | trigger event.push `MouseEvenet(kMovedMouse)` -> `MouseEvenet(kPressedMouse)` -> `MouseEvenet(kReleasedMouse)` -> `web_view->DispatchMouseEvents(events) -> session->GetCurrentFrameID()`
+          * https://chromedevtools.github.io/devtools-protocol/tot/Input/#method-dispatchMouseEvent
         * | WebSocket `WebViewImpl::DispatchMouseEvents(events)` -> `client.SendCommand("Input.dispatchMouseEvent", params)`
         * v vse co chromeDriver dela je to, ze je to tenky wrapper nad DevTools, vyuziva debug prikazu a podoba se kliknuti klienta, je to nejlepsi pristup pro simulaci experience klienta
+     * Pupik je WS client a pristupuje k Devtools na primo
 * Webdriver.io
 * Canarytrace
 * SauceLabs, browserstack
