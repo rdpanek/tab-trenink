@@ -1,8 +1,9 @@
 # TAB - Canarytrace prakticky
 
 **Prerekvizity**
-- Ucet na DigitalOcean
-- Ucet na Githubu
+- Ucet na DigitalOcean (https://www.digitalocean.com/)
+- Ucet na Githubu (https://github.com/)
+- Ucet na Dockerhubu (https://hub.docker.com/) uzivatelske jmeno by melo mit rozumny tvar, budete jej pouzivat :-)
 - Aplikaci / Konzoli pro prihlaseni pres ssh
 
 
