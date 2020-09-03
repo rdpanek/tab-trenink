@@ -110,7 +110,6 @@
 **Interface a protokoly**
 * REST-API
 * GraphQL
-* SOAP
 * TCP a UDP
 * Websockety
 * Fronty
