@@ -5,6 +5,11 @@
 - Ucet na Githubu (https://github.com/)
 - Ucet na Dockerhubu (https://hub.docker.com/) uzivatelske jmeno by melo mit rozumny tvar, budete jej pouzivat :-)
 - Aplikaci / Konzoli pro prihlaseni pres ssh
+- Vlastni pocitac
+
+**Prostupy**
+- IP dropletu
+- Porty 9200, 9300, 5601, 4444, 80
 
 
 ## 1). Digital ocean a deploy dropletů
