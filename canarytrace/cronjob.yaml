@@ -5,7 +5,7 @@ metadata:
 spec:
   concurrencyPolicy: Replace
   failedJobsHistoryLimit: 2
-  schedule: "*/1 * * * *"
+  schedule: "*/2 * * * *"
   jobTemplate:
     spec:
       template:
