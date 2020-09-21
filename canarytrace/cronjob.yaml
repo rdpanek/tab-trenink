@@ -12,16 +12,20 @@ spec:
         spec:
           containers:
           - name: canary
-            image: quay.io/canarytrace/smoke:c.2.12.2
+            image: quay.io/canarytrace/smoke:c.2.14.1
             env:
             - name: BASE_URL
-              value: "https://www.tesla.com/"
+              value: "http://canarytrace.com/"
             - name: AVAILABILITY_CHECK
               value: allow
             - name: SMOKE
               value: allow
             - name: ELASTIC_CLUSTER
               value: http://<droplet-ip>:9200
+            - name: ELASTIC_CLUSTER
+              valueFrom: ""
+            - name: ELASTIC_HTTP_AUTH
+              value: ""
             - name: AT_DRIVER_HOST_NAME
               value: "localhost"
             resources:
