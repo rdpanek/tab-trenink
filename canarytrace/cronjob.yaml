@@ -1,11 +1,11 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: your-name
+  name: smoke-name
 spec:
   concurrencyPolicy: Replace
   failedJobsHistoryLimit: 2
-  schedule: "*/2 * * * *"
+  schedule: "*/1 * * * *"
   jobTemplate:
     spec:
       template:
@@ -15,17 +15,13 @@ spec:
             image: quay.io/canarytrace/smoke:c.2.14.1
             env:
             - name: BASE_URL
-              value: "http://canarytrace.com/"
-            - name: AVAILABILITY_CHECK
-              value: no
+              value: "http://canarytrace.com/;https://www.testautomation-basecamp.cz/"
             - name: SMOKE
               value: allow
             - name: ELASTIC_CLUSTER
-              value: http://<droplet-ip>:9200
-            - name: ELASTIC_CLUSTER
-              valueFrom: ""
+              value: "http://ip:9200"
             - name: ELASTIC_HTTP_AUTH
-              value: ""
+              value: "elastic:"
             - name: AT_DRIVER_HOST_NAME
               value: "localhost"
             resources:
