@@ -17,7 +17,7 @@ spec:
             - name: BASE_URL
               value: "http://canarytrace.com/"
             - name: AVAILABILITY_CHECK
-              value: allow
+              value: no
             - name: SMOKE
               value: allow
             - name: ELASTIC_CLUSTER
