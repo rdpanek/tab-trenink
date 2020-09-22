@@ -2,9 +2,12 @@
 
 ## Příprava
 
+**Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]**
+https://youtu.be/UN5ikuJ70ZA
+
 **Vytvořit droplet na DigitalOcean**
 
-[Postup: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
+[Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
 **Docker**
 - Spustit nějaké docker kontejnery, například selenium
