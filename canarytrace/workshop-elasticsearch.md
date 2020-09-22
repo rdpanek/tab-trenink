@@ -3,6 +3,7 @@
 ## Příprava
 
 **Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]**
+
 https://youtu.be/UN5ikuJ70ZA
 
 **Vytvořit droplet na DigitalOcean**
