@@ -4,7 +4,7 @@
 
 **Vytvořit droplet na DigitalOcean**
 
-(Postup: Create and sign in to droplet on DigitalOcean)[https://canarytrace.atlassian.net/l/c/6xsXtGNT]
+[Postup: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
 **Docker**
 - Spustit nějaké docker kontejnery, například selenium
