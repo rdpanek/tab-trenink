@@ -2,20 +2,46 @@
 
 ## Příprava
 
-**Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]**
+### Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]
 
 https://youtu.be/UN5ikuJ70ZA
 
-**Vytvořit droplet na DigitalOcean**
+### Vytvořit droplet na DigitalOcean
 
 [Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
-**Docker**
-- Spustit nějaké docker kontejnery, například selenium
+### Docker
+Přihlaš se na svůj droplet a spusť nějaké docker kontejnery, například 
+
+**selenium**
 
 ```
 docker run --name selen --net canary -d -p 5902:5900 -p 4444:4444 -p 0.0.0.0:9222:9222 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-20200730
 ```
+
+a **ngnix**
+
+Vytvoř si jednoduchý html soubor
+
+```
+<html>
+  <head>
+    <title>What is nginx?</title>
+  </head>
+  <body>
+  <p>
+    Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, HTTP cache, and a web server (origin server). The nginx project started with a strong focus on high concurrency, high performance and low memory usage. It is licensed under the 2-clause BSD-like license and it runs on Linux, BSD variants, Mac OS X, Solaris, AIX, HP-UX, as well as on other *nix flavors. It also has a proof of concept port for Microsoft Windows.
+  </p>
+  </body>
+</html>
+```
+
+a spusť
+
+```
+docker run --name nginx --rm -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
+```
+
 
 **heartbeat**
 
