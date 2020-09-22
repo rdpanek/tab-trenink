@@ -2,11 +2,16 @@
 
 ## Příprava
 
-**Droplet**
-- Vytvořit droplet na DigitalOcean
+**Vytvořit droplet na DigitalOcean**
+
+(Postup: Create and sign in to droplet on DigitalOcean)[https://canarytrace.atlassian.net/l/c/6xsXtGNT]
 
 **Docker**
-- Spustit nějaké docker kontejnery
+- Spustit nějaké docker kontejnery, například selenium
+
+```
+docker run --name selen --net canary -d -p 5902:5900 -p 4444:4444 -p 0.0.0.0:9222:9222 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug:3.141.59-20200730
+```
 
 **heartbeat**
 
