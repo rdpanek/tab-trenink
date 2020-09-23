@@ -14,8 +14,10 @@ Dokumentace: https://canarytrace.atlassian.net/l/c/d8MGC0j1
 Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 
 ---
+> Super, pokud jsi došel/došla až jsem, tak jsi hodně naučil(a). Nyní přidáme třeba ještě monitoring dostupnosti pomocí [Heartbeat](https://www.elastic.co/beats/heartbeat) a monitorování zdrojů několika docker containerů pomocí [Metricbeat](https://www.elastic.co/beats/metricbeat)
 
 ### Vytvořit droplet na DigitalOcean
+> Droplet je virtuální stroj v DigitalOcean, na kterém vytočíme nějaké docker kontejnery. 
 
 [Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
