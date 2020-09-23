@@ -167,21 +167,7 @@ a spusť
 Nyní v Kibaně mrkni do menu a Metrics
 
 ---
-## Líbil se ti webinář?
 
-Ve stejném duchu připravuji další, takže checkuj ať ti pokračování neuteče. Pokračování? ano, workshopy na sebe navazují 🤟
-
-* [Twitter](https://twitter.com/RDPanek)
-* [LinkedIn](https://www.linkedin.com/in/rdpanek/) 
-
-Potřebuješ pomoct ve firmě s test automatizací, zajímá tě více plug-and-play stack Canarytrace? Nevíš pro jaký nástroj v testautomatizaci se rozhodnout? Nebo chceš Elasticstack pro jiné využití než bylo v demu? Potřebuješ proškolit testery? Stačí se ozvat, rád pomůžu 🤟
-
-* Tel.: 731 011 200
-* Mail: rdpanek gmail
-
-Budu rád za krátkou recenzi na tento workshop a nebo post na socialních síti twitter, linkedin atp. + mě označ, a využij tagu `#testAutomationBasecamp` díky :-) 
-<br/>
-<br/>
 Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack).
 <br/>
 <br/>
