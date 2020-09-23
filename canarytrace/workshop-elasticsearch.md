@@ -1,10 +1,17 @@
-# Workshop: Elasticsearch stack
-
-## Příprava
+# Workshop: Elasticsearch stack Demo
+> Toto demo vás provede nasazením Elasticsearch v cloudu (pro ukládání dat a následné zobrazení v Kibaně), vytvořením Kubernetes clusteru v Digital Ocean pro rotaci [Canarytrace Smoke](https://quay.io/repository/canarytrace/smoke), který instantně live zapisuje výsledky smoků do Elasticsearch. Následně můžete nad daty dělat vizualizace, dashboardy, vyhledávat atp.
 
 ### Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]
 
 https://youtu.be/UN5ikuJ70ZA
+
+### Vytoč si Elasticsearch v cloudu
+
+Dokumentace: https://canarytrace.atlassian.net/l/c/d8MGC0j1
+
+### Vytoč si Kubernetes cluster v Digital Ocean
+
+Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 
 ### Vytvořit droplet na DigitalOcean
 
