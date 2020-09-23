@@ -32,7 +32,7 @@ docker run --name selen --net canary -d -p 5902:5900 -p 4444:4444 -p 0.0.0.0:922
 
 a **ngnix**
 
-Vytvoř si jednoduchý html soubor
+- před spuštěním si ještě vytvoř jednoduchý HTML soubor, který předhodíme ngnixu a který jej pak bude servírovat
 
 ```
 <html>
@@ -53,10 +53,18 @@ a spusť
 docker run --name nginx --rm -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
 ```
 
+**checkni, že ti selenium a ngnix běží**
+
+Otevři prohlížeč a zkus
+
+- pro selenium: ip-dropletu:4444
+- pro ngnix: ip-dropletu:8080
+
+> Nyní nasadíme heartbeat a metricbeat a necháme je logovat do našeho Elasticu v cloudu
 
 **heartbeat**
 
-heartbeat.docker.yml
+Vytvoř heartbeat konfiguraci `heartbeat.docker.yml`
 
 ```
 heartbeat.monitors:
@@ -75,7 +83,7 @@ output.elasticsearch:
   password: '${ELASTICSEARCH_PASSWORD:}'
 ```
 
-heartbeatRunner.sh
+Vytvoř heartbeat docker runner `heartbeatRunner.sh`
 
 ```
 #!/bin/bash
@@ -87,9 +95,19 @@ docker run --name heartbeat -d --rm --net canary \
   -E cloud.auth=elastic:xyz
 ```
 
+Nastav runner jako spustitelný
+
+`chmod a+x chmod a+x heartbeatRunner.sh`
+
+a spusť
+
+`./heartbeatRunner.sh`
+
+Nyní v Kibaně mrkni do menu a Uptime
+
 **metricbeat**
 
-metricbeat.docker.yml
+Vytvoř konfiguraci pro metricbeat `metricbeat.docker.yml`
 ```
 metricbeat.autodiscover:
   providers:
@@ -120,7 +138,7 @@ output.elasticsearch:
   password: '${ELASTICSEARCH_PASSWORD:}'
 ```
 
-metricRunner.sh
+Vytvoř runner `metricRunner.sh`
 
 ```
 #!/bin/bash
@@ -137,3 +155,15 @@ docker run --name metricbeat -d --rm  \
   -E cloud.id=canarytrace:xzy \
   -E cloud.auth=elastic:xyz
 ```
+
+Nastav runner jako spustitelný
+
+`chmod a+x chmod a+x metricRunner.sh`
+
+a spusť
+
+`./metricRunner.sh`
+
+Nyní v Kibaně mrkni do menu a Metrics
+
+---
