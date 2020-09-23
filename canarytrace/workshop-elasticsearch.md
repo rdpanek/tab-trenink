@@ -13,6 +13,8 @@ Dokumentace: https://canarytrace.atlassian.net/l/c/d8MGC0j1
 
 Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 
+---
+
 ### Vytvořit droplet na DigitalOcean
 
 [Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
