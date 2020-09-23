@@ -107,11 +107,12 @@ https://canarytrace.atlassian.net/l/c/Qbe9hCuU
 - `kubectl --kubeconfig=k8s.yaml apply -f cronjob.yaml`
 
 ## 14). Nasadit CanarySmoke
-- stahnout cronjob.yaml `curl -L -O https://raw.githubusercontent.com/rdpanek/tab-trenink/master/canarytrace/cronjob.yaml`
+- stahnout cronjob.yaml https://canarytrace.atlassian.net/wiki/spaces/CDD/pages/261587013/Kubernetes+cluster+on+Digital+Ocean#Create-your-first-CronJob
 - upravit cronjob
     - `metadata.name`
 - upravit cronjob
     - ELASTIC_CLUSTER `http://<droplet-ip>:9200`
+    - ELASTIC_HTTP_AUTH můžeš smazat, není potřeba
 - deploy `kubectl --kubeconfig=k8s.yaml apply -f cronjob.yaml`
 - vypsat cronjob, pod, log z podu
 
