@@ -5,7 +5,7 @@ provider "azurerm" {
 
 #create the resource group
 resource "azurerm_resource_group" "network-rg" {
-  name = "teststack-resource-group"
+  name = "canarytrace"
   location = "westeurope"
 }
 
@@ -53,8 +53,8 @@ resource "azurerm_windows_virtual_machine" "windows-10-vm" {
   location = azurerm_resource_group.network-rg.location
   resource_group_name = azurerm_resource_group.network-rg.name
   size = "Standard_D2s_v3"
-  admin_username = "pribylak"
-  admin_password = "12sipkovaRuzenka@"
+  admin_username = "canarytrace"
+  admin_password = "@Canarytrace123"
 
   network_interface_ids = [azurerm_network_interface.vmnic.id]
 
@@ -70,5 +70,14 @@ resource "azurerm_windows_virtual_machine" "windows-10-vm" {
     version = "latest"
   }
 
+}
+
+data "azurerm_public_ip" "windows" {
+  name = azurerm_public_ip.pub_ip.name
+  resource_group_name = azurerm_windows_virtual_machine.windows-10-vm.resource_group_name
+}
+
+output "public_ip_address" {
+  value = data.azurerm_public_ip.windows.ip_address
 }
 ##end creating VM
