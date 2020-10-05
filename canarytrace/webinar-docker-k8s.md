@@ -19,8 +19,15 @@ docker neni virtual, pouziva OS Host
   - k alokaci, limitaci resources pro procesy, pristupy na disky a sit
   - kazdy resource je subsystem a maji stromovou strukturu
   - ps -ef | grep elastic
-  - (linux only nebo k8s node) systemd-cgls
+  - systemd-cgls
+  - docker ps na k8s node
+  - systemd-cgtop
 - namespace
 
 
 - lxc, dnes lxd (snazi se bootovat vlastni os)
+- https://cri-o.io/
+- https://katacontainers.io/
+- https://coreos.com/rkt/
+- https://containerd.io/
+- https://podman.io/
