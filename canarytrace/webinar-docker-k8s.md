@@ -30,4 +30,9 @@ docker neni virtual, pouziva OS Host
 - https://katacontainers.io/
 - https://coreos.com/rkt/
 - https://containerd.io/
-- https://podman.io/
+- https://podman.io/ Red Hat
+
+- spusteni / runC https://opencontainers.org/
+- build / buildah https://buildah.io/
+- sprava / https://containerd.io/ crictl
+- kubernetes (docker/containerd)
