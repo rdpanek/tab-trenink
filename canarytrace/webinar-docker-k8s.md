@@ -36,3 +36,4 @@ docker neni virtual, pouziva OS Host
 - build / buildah https://buildah.io/
 - sprava / https://containerd.io/ crictl
 - kubernetes (docker/containerd)
+  - RBAC
