@@ -37,3 +37,10 @@ docker neni virtual, pouziva OS Host
 - sprava / https://containerd.io/ crictl
 - kubernetes (docker/containerd)
   - RBAC
+  - HA objektove uloziste etcd
+  - jednonodove
+    - minikibe, microk8s, k3s
+  - produkcni
+    - kubeadm, kubelet, kubespray
+  - klient (REST-API)
+    - kubectl
