@@ -3,6 +3,7 @@
 - docker
 - lifecycle (hooks, listeners)
 - nesimuluje realneho uzivatele
+- cy.visit() chybi checky na loadEventEnd, title atp.
 
 
 ## Cypress a stare 90'
