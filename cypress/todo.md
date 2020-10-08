@@ -4,6 +4,7 @@
 - lifecycle (hooks, listeners)
 - nesimuluje realneho uzivatele
 - cy.visit() chybi checky na loadEventEnd, title atp.
+- cypress spousti kod asynchronne?
 
 
 ## Cypress a stare 90'
