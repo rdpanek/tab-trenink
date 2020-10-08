@@ -2,10 +2,12 @@
 
 - docker
 - lifecycle (hooks, listeners)
+- nesimuluje realneho uzivatele
 
 
 ## Cypress a stare 90'
 - Vse v jednom adresari, co takhle [The Twelve Factors](https://12factor.net/)?
+- 
 
 ## Dashboard
 - v cloudu
