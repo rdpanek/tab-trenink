@@ -11,6 +11,7 @@
 - Vse v jednom adresari, co takhle [The Twelve Factors](https://12factor.net/)?
 - jQuery
 - vlastni jmenna konvence?
+  - tasky: before:browser:launch misto goog:chromeOptions <= ok v cypressu nejde o capabilities
 
 ## Dashboard
 - v cloudu
