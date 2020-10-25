@@ -57,7 +57,7 @@ a **ngnix**
 a spusť
 
 ```
-docker run --name nginx --rm -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
+docker run --name nginx --rm --net canary -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
 ```
 
 **checkni, že ti selenium a ngnix běží**
