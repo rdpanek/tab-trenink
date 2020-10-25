@@ -173,6 +173,9 @@ a spusť
 
 Nyní v Kibaně mrkni do menu a Metrics
 
+**Curator**
+https://github.com/rdpanek/curator
+
 ---
 
 Pokračuj ve vzdělávání a sleduj [TEST STACK Live](https://www.youtube.com/c/teststack), sleduj mě při práci a ptej se [Let's tests](https://www.twitch.tv/rdpanek/videos) a nebo se otoč [na slack](http://bit.ly/test-stack).
