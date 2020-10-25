@@ -22,7 +22,14 @@ Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 [Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
 ### Docker
-Přihlaš se na svůj droplet a spusť nějaké docker kontejnery, například 
+Přihlaš se na svůj droplet a spusť nějaké docker kontejnery.
+
+# Prvně si vztvoř user-defined bridges canarytrace
+```
+docker network create canary
+```
+
+a pak si spusť kontejnery:
 
 **selenium**
 
