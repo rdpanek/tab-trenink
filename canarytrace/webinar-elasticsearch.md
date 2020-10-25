@@ -174,6 +174,7 @@ a spusť
 Nyní v Kibaně mrkni do menu a Metrics
 
 **Curator**
+
 https://github.com/rdpanek/curator
 
 ---
