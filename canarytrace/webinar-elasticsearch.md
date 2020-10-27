@@ -29,7 +29,7 @@ Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 ### Docker
 Přihlaš se na svůj droplet a spusť nějaké docker kontejnery.
 
-# Prvně si vztvoř user-defined bridges canarytrace
+# Prvně si vytvoř user-defined bridges canarytrace
 ```
 docker network create canary
 ```
