@@ -2,7 +2,7 @@ resource "digitalocean_kubernetes_cluster" "tab" {
 
   name     = "tabk8s"
   region   = "fra1"
-  version = "1.18.3-do.0"
+  version = "1.19.3-do.2"
   node_pool {
     name       = "tabpool"
     size       = "s-4vcpu-8gb"
