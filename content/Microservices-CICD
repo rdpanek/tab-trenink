@@ -1,0 +1,10 @@
+# Microservices, CI/CD
+
+- kupuji si svobodu za cenu zvysene komplexity
+- dostat se do vyvoje cloud native je cesta na roky
+- serivce by mela mit vlastni DB
+- microservice je aplikace, ktera resi business logiku, auth, aut, tracing, metrics, logging, fault tolerance, routing
+- service mesh soucasti openshiftu 4
+- nechci aby resil vyvojar to co umi resit platforma. Napr., pokud platforma umi vyresit logovani, neresi to nasazena aplikace na platformu.
+- https://cloud.google.com/tekton
+- 

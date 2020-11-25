@@ -1,6 +1,11 @@
 # Webinář: Elasticsearch stack Demo
 > Toto demo vás provede nasazením Elasticsearch v cloudu (pro ukládání dat a následné zobrazení v Kibaně), vytvořením Kubernetes clusteru v Digital Ocean pro rotaci [Canarytrace Smoke](https://quay.io/repository/canarytrace/smoke), který instantně live zapisuje výsledky smoků do Elasticsearch. Následně můžete nad daty dělat vizualizace, dashboardy, vyhledávat atp.
 
+## Příprava
+- Uvodni grafika webinare
+- Zapnout nahrávání
+- Aktualizovat dependencies
+
 ### Video: Elasticsearch nahrazuje HTML Reporty [Demo + Webinář]
 
 https://youtu.be/UN5ikuJ70ZA
@@ -22,7 +27,14 @@ Dokumentace: https://canarytrace.atlassian.net/l/c/P1dqMwaP
 [Použij pouze část: Create and sign in to droplet on DigitalOcean](https://canarytrace.atlassian.net/l/c/6xsXtGNT)
 
 ### Docker
-Přihlaš se na svůj droplet a spusť nějaké docker kontejnery, například 
+Přihlaš se na svůj droplet a spusť nějaké docker kontejnery.
+
+# Prvně si vytvoř user-defined bridges canarytrace
+```
+docker network create canary
+```
+
+a pak si spusť kontejnery:
 
 **selenium**
 
@@ -50,7 +62,7 @@ a **ngnix**
 a spusť
 
 ```
-docker run --name nginx --rm -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
+docker run --name nginx --rm --net canary -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 -d nginx
 ```
 
 **checkni, že ti selenium a ngnix běží**
@@ -165,6 +177,10 @@ a spusť
 `./metricRunner.sh`
 
 Nyní v Kibaně mrkni do menu a Metrics
+
+**Curator**
+
+https://github.com/rdpanek/curator
 
 ---
 
