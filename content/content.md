@@ -245,7 +245,7 @@ $.map($('body *'), function(e,n) {
       if (zindex > 0) {
       console.log(zindex)
       console.log(e)
-      // e.delete()
+      // e.remove()
    }
 })
 ```
